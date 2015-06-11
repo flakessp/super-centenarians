@@ -1,0 +1,368 @@
+@import url(http://fonts.googleapis.com/css?family=PT+Sans);
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    font-family: 'PT Sans', sans-serif;
+    padding: 0;
+
+}
+main{
+	width: 100%;
+	background-color: #f8f8f8;
+	height: auto;
+}
+a{
+	text-decoration: none;
+}
+nav.header-nav{
+	height: 164px;
+	box-shadow: 0px 1px 4px 0px rgba(212,212,212,0.50);
+	width: 100%;
+	font-size: 16px;
+	color: #000000;
+	line-height: 20px;
+	background-color: #fff;
+}
+.nav-wrapper{
+	width: 1024px;
+	margin: 0 auto;
+}
+section{
+    width: 981px;
+    margin: 0 auto;
+    margin-top: 15px;
+    background-color: #fff;
+}
+
+ul.nav-ul{
+    list-style: none;
+    float: left;
+    margin-left: 161px;
+}
+h2{
+font-size: 36px;
+color: #000000;
+line-height: 46px;
+margin-bottom: 16px;
+}
+.nav-row{
+	margin-top: 87px;
+	    float: left;
+}
+
+li{
+    display: inline;
+    margin-right: 37px;
+}
+.nav-logo{
+    margin-top: 40px;
+    margin-left: 40px;
+    float: left;
+}
+.nav-signin{
+    float: left;
+    margin-left: 54px;
+	font-size: 14px;
+	color: #D8D8D8;
+	line-height: 19px;
+}
+.nav-signin a{
+	font-size: 14px;
+	color: #D8D8D8;
+	line-height: 19px;
+}
+
+/* GALLERY SECTION */
+.section-main-gallery-block{
+	height: 440px;
+}
+.section-gallery{
+	height: 441px;
+	width: 640px;
+	background: url(../img/mountains.jpg)no-repeat center;
+	background-size: cover;
+	float: left;
+	box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.50);
+}
+.section-gallery p {
+	font-size: 24px;
+	color: #FFFFFF;
+	line-height: 32px;
+	margin-left: 19px;
+	text-shadow: 0px 1px 6px rgba(188,188,188,0.50);
+	width: 556px;
+	padding-top: 220px;
+}
+.section-banner{
+	width: 321px;
+	height: 440px;
+	margin-left: 20px;
+	background-image: linear-gradient(-226deg, #04477E 7%, #CFBED1 77%, #01254D 100%);
+	box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.50);
+	float: left;
+}
+/* SECTIONS */
+
+/* control-bar*/
+.control-bar{
+	height: 80px;
+	padding: 32px 0 0 20px;
+	position: relative;
+	box-shadow: 0 2px 4px rgba(210, 210, 210, 0.5);
+}
+
+a.control-bar-icon{
+    margin-right: 14px;
+}
+a.filter{
+	float: right;
+	margin-right: 27px;
+}
+
+.control-bar-button{
+	position: absolute;
+	display: inline-block;
+	text-align: center;	
+	background: #F5A623;
+	box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.20);
+	border-radius: 5px 3px 3px 3px;
+	font-size: 13.22px;
+	color: #FFFFFF;
+	width: 221px;
+	height: 44px;
+	line-height: 18px;
+	padding-top: 13px;
+	left: 659px;
+	top: 18px;
+}
+
+section.centenarians-gallery-list{
+	height: 536px;
+	background-color: #f8f8f8;
+	position: relative;
+	margin-bottom: 40px;
+}
+section.centenarians-gallery-list:after {
+        visibility: hidden;
+        display: block;
+        content: "";
+        clear: both;
+        height: 0;
+        }
+
+/*CENT BLOCK*/
+.centenarian-block{
+	width: 230px;
+	height: 236px;
+	background-color: #fff;
+	float: left;
+	margin-right: 19px;
+	margin-bottom: 18px;
+	box-shadow: 0 2px 4px rgba(210, 210, 210, 0.5);;
+}
+.centenarian-block:nth-child(4n){
+	margin-right: 0;
+}
+.centenarian-block-photo{
+	background: url(../img/centenarian-photo.jpg) no-repeat center center ;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	width: 100%;
+	height: 137px;
+	background-size: cover;
+}
+.centenarian-block h3{
+	font-size: 14px;
+	line-height: 19px;
+	margin-bottom: 10px;
+}
+.centenarian-block p {
+	font-size: 11.66px;
+	line-height: 14px;
+	margin-bottom: 16px;
+	margin-left: 2px;
+}
+.centenarian-block-info{
+    padding: 10px;
+    position: relative;
+}
+.centenarians-gallery-list-nav-arrows{
+    position: absolute;
+    bottom: -5px;
+    left: 440px;
+}
+.centenarians-gallery-list-nav-arrows a:last-child{
+    margin-left: 56px;
+	
+}
+
+section.about{
+	height: 311px;
+	box-shadow: 0 2px 4px rgba(210, 210, 210, 0.5);
+}
+
+section.volunteers{
+	height: 348px;
+	box-shadow: 0 2px 4px rgba(210, 210, 210, 0.5);
+	
+}
+
+.right-column{
+    position: absolute;
+    right: 12px;
+    top: 11px;
+
+}
+figure.flag{
+    background: url(../img/centenarian-info-flag.png);
+    height: 17px;
+    width: 24px;
+    margin-bottom: 26px;;
+
+}
+figure.heart-noclick{
+    background: url(../img/centenarian-info-heart-noclick.svg);
+    height: 13px;
+    width: 15px;
+    margin-bottom: 3px;
+    margin-left: 3px;
+}
+ article{
+    padding: 23px;
+}
+
+.about article p {
+	-webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+    -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 40px; /* Firefox */
+    column-gap: 40px;
+    /* The project is devot: */
+	font-size: 14px;
+	line-height: 23px;
+}
+
+footer{
+    height: 152px;
+    background-color: #fff;
+    margin-top: 20px;
+
+}
+.volunteers-list-block{
+    height: 80px;
+    width: 203px;
+    float: left;
+    margin-right: 36px;
+    margin-bottom: 33px;
+}
+.volunteers-list-block:nth-child(4n){
+	margin-right: 0;
+}
+figure.volunteers-list-block-photo{
+    width: 80px;
+    height: 80px;
+    float: left;
+    background: url(../img/centenarian-photo.jpg) center center;
+    border-radius: 40px;
+    background-size: cover;
+
+}
+.volunteers-list-block-right-column{
+    float: left;
+    margin-left: 22px;
+
+}
+h3.volunteers-list-block-name{
+	font-size: 14px;
+	line-height: 29px;
+}
+
+
+.volunteers-list-block-right-column p{
+	font-size: 14px;
+	line-height: 29px;
+}
+
+/* FOOTER */
+
+.footer-logo{
+    background: url(../img/footer-logo.png);
+    width: 226px;
+    height: 67px;
+
+}
+.footer-wrapper{
+    width: 981px;
+    margin: 0 auto;
+    padding: 22px 12px;
+}
+.footer-wrapper:after{
+	visibility: hidden;
+	display: block;
+	content: "";
+	clear: both;
+	height: 0;
+}
+p.footer-copyright{
+    font-size: 12px;
+    color: #D8D8D8;
+    line-height: 15px;
+    margin-top: 23px;
+}
+.footer-nav-list li{
+	display: inline;
+	font-size: 14px;
+}
+ul.footer-nav-menu-menu li{
+	display: block;
+	font-size: 12px;
+}
+
+.footer-nav-list{
+    position: relative;}
+    
+.footer-leftblock{
+    float: left;
+
+}
+footer nav ul { 
+color: #d8d8d8
+}
+nav.footer-nav{
+    float: left;
+    margin-left: 78px;
+}
+ul.footer-nav-menu-menu{
+    margin-left: 76px;
+    margin-top: 11px;
+
+}
+.footer-social{
+    float: left;
+    margin-left: 185px;
+
+}
+.footer-social-urls li{
+	display: inline-block;
+	height: 24px;
+	width: 24px;
+	margin-right: 16px;
+}
+.footer-social-urls li:nth-child(4n){
+	margin-right: 0;
+}
+li.social-url-twitter{
+	background: url(../img/footer-icon-twitter.svg);
+}
+li.social-url-fb{
+	background: url(../img/footer-icon-fb.svg);
+}
+li.social-url-g{
+	background: url(../img/footer-icon-g.svg);
+}
+li.social-url-in{
+	background: url(../img/footer-icon-in.svg);
+}
