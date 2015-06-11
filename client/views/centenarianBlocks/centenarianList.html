@@ -1,0 +1,11 @@
+<template name="centenarianList">
+    <section class="centenarians-gallery-list">
+        {{#each centenarians}}
+            {{>centenarianBlock}}
+        {{/each}}
+        <div class="centenarians-gallery-list-nav-arrows">
+            <a href=""><img src="img/centenarians-gallery-list-nav-arrow-bottom.svg" alt="" /></a>
+            <a href=""><img src="img/centenarians-gallery-list-nav-arrow-up.svg" alt="" /></a>
+        </div><!-- /.centenarians-gallery-list-nav-arrows -->
+    </section>
+</template>
