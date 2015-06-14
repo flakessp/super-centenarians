@@ -1,0 +1,23 @@
+<template name="layout">
+    <main>
+        <nav class="header-nav">
+            <div class="nav-wrapper">
+                <div class="nav-logo">
+                    <a href="home"><img src="img/Logo_Active_Cent.png" alt=""/></a>
+                </div>
+                <div class="nav-row">
+                    <ul class="nav-ul">
+                        <li>Home</li>
+                        <li>About The Project</li>
+                        <li>Contact</li>
+                    </ul>
+                    <div class="nav-signin">
+                        <a href="">Sign up</a> or <a href="">Log in</a>
+                    </div>
+                </div>
+            </div><!-- /.nav-wrapper -->
+        </nav>
+
+        {{>yield}}
+    </main>
+</template>
