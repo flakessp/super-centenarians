@@ -102,10 +102,62 @@ li{
 	box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.50);
 	float: left;
 }
+.section-centenarian-gallery-block:after{
+	visibility: hidden;
+    display: block;
+    content: "";
+    clear: both;
+    height: 0;
+}
 /* CENTENARIAN PAGE */
 .section-centenarian-gallery-block .section-banner{
 	width: 980px;
 	height: 150px;
+	margin-left: 0;
+}
+.section-centenarianPage-mainBlock{
+	margin-top: 20px;
+	background-color: #f8f8f8;
+}
+.centenarianPage-textBlock{
+	width: 640px;
+	float: left;
+	box-shadow: 0px 1px 4px 0px rgba(212,212,212,1);
+	height: 850px;
+	background-color: white;
+	margin-right: 20px;
+}
+.section-centenarianPage-mainBlock:after{
+	visibility: hidden;
+	display: block;
+	content: "";
+	clear: both;
+	height: 0;
+}
+.centenarianPage-infoBlock div{
+	float: left;
+	box-shadow: 0 2px 4px rgba(210, 210, 210, 0.5);
+	background-color: white;
+	margin-bottom: 15px;
+}
+.centenarianPage-infoBlock div:last-child{
+	margin-bottom: 0;
+}
+.centenarianPage-infoBlock-profileBlock{
+	width: 320px;
+	height: 390px;
+}
+.centenarianPage-infoBlock-socialBlock{
+	width: 320px;
+	height: 112px;
+}
+.centenarianPage-infoBlock-mediaBlock{
+	width: 320px;
+	height: 202px;
+}
+.centenarianPage-Block-achievementsBlock{
+	width: 320px;
+	height: 101px;
 }
 /* SECTIONS */
 
@@ -149,12 +201,12 @@ section.centenarians-gallery-list{
 	margin-bottom: 40px;
 }
 section.centenarians-gallery-list:after {
-        visibility: hidden;
-        display: block;
-        content: "";
-        clear: both;
-        height: 0;
-        }
+    visibility: hidden;
+    display: block;
+    content: "";
+    clear: both;
+    height: 0;
+    }
 
 /*CENT BLOCK*/
 .centenarian-block{
