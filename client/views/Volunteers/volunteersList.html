@@ -1,0 +1,12 @@
+<template name="volunteersList">
+    <section class="volunteers">
+        <article>
+            <h2>Volunteers</h2>
+            <div class="volunteers-list">
+                {{#each volunteers}}
+                    {{>volunteersBlock}}
+                {{/each}}
+            </div><!-- /.volunteers-list -->
+        </article>
+    </section>
+</template>
