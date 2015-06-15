@@ -110,6 +110,10 @@ li{
     height: 0;
 }
 /* CENTENARIAN PAGE */
+.centenarian-block a{
+	display: block;
+	color: black;
+}
 .section-centenarian-gallery-block .section-banner{
 	width: 980px;
 	height: 150px;
