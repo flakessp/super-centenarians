@@ -126,6 +126,14 @@ li{
 	height: 850px;
 	background-color: white;
 	margin-right: 20px;
+	padding-top: 5px;
+}
+.centenarianPage-textBlock p{
+	font-size: 14px;
+  	line-height: 1.7em;
+}
+.centenarianPage-textBlock h2{
+	margin-top: 10px;
 }
 .section-centenarianPage-mainBlock:after{
 	visibility: hidden;
