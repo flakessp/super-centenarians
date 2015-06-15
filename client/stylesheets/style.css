@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=PT+Sans);
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700);
 
 *{
     box-sizing: border-box;
@@ -146,30 +146,123 @@ li{
 	clear: both;
 	height: 0;
 }
-.centenarianPage-infoBlock div{
+.centenarianPage-infoBlock div.tileBlock{
 	float: left;
 	box-shadow: 0 2px 4px rgba(210, 210, 210, 0.5);
 	background-color: white;
 	margin-bottom: 15px;
 }
-.centenarianPage-infoBlock div:last-child{
+.centenarianPage-infoBlock div.tileBlock:last-child{
 	margin-bottom: 0;
 }
+/*--profileBlock*/
 .centenarianPage-infoBlock-profileBlock{
 	width: 320px;
-	height: 390px;
 }
+.centenarianPage-infoBlock-profileBlock p{
+	font-size: 14px;
+	line-height: 29px;
+}
+.profileBlock-info-leftColumn{
+	float: left;
+	padding: 20px;
+}
+.profileBlock-info-leftColumn p{
+	font-weight: 700;
+}
+.profileBlock-photo img{
+	width: 100%;
+}
+.profileBlock-info-rightColumn{
+	float: left;
+	padding: 20px;
+}
+/*--socialBlock*/
 .centenarianPage-infoBlock-socialBlock{
 	width: 320px;
 	height: 112px;
+	padding: 20px;
 }
+.socialBlock-heartColumn{
+	float: left;
+	margin-right: 10px;
+}
+.heartColumn-heartCounter{
+	height: 49px;
+	width: 28px;
+	background: url(/img/centenarianPage-heart.svg) top left no-repeat;
+	padding-top: 30px;
+	text-align: center;
+	margin-left: 17px;
+	margin-right: 23px;
+}
+.heartColumn-rating{
+	margin-top: 8px;
+	font-size: 12px;
+	color: #9B9B9B;
+	text-align: center;
+}
+.socialBlock-socialWrapper{
+	float: left;
+	height: 72px;
+	width: 198px;
+}
+.socialBlock-socialWrapper div{
+	height: 26px;
+	width: 91px;
+	border: 1px solid #D2D2D2;
+	border-radius: 3px 3px 3px 3px;
+	font-size: 11px;
+	color: #8A7777;
+	letter-spacing: 0px;
+	line-height: 13px;
+	float: left;
+	padding-left: 47px;
+	padding-top: 6px;
+	text-align: center;
+}
+.socialBlock-socialWrapper div:nth-child(odd){
+	margin-right: 14px;
+}
+.socialBlock-socialWrapper div:nth-child(1){
+	margin-bottom: 19px;
+}
+.socialBlock-socialWrapper div:nth-child(2){
+	margin-bottom: 19px;
+}
+.socialWrapper-twitter{
+	background: url('/img/socialBlock-twiiter.svg') left center no-repeat;
+}
+.socialWrapper-linkedin{
+	background: url('/img/socialBlock-linkedin.svg') left center no-repeat;
+}
+.socialWrapper-facebook{
+	background: url('/img/socialBlock-facebook.svg') left center no-repeat;
+}
+.socialWrapper-gplus{
+	background: url('/img/socialBlock-gplus.svg') left center no-repeat;
+}
+/* --mediaBlock*/
 .centenarianPage-infoBlock-mediaBlock{
 	width: 320px;
 	height: 202px;
 }
+.centenarianPage-infoBlock-mediaBlock img{
+	float: left;
+	margin-right: 1px;
+	margin-bottom: 1px;
+}
+.centenarianPage-infoBlock-mediaBlock img:nth-child(3n){
+	margin-right: 0;
+}
+/*--achievementsBlock*/
 .centenarianPage-Block-achievementsBlock{
 	width: 320px;
 	height: 101px;
+	padding: 20px;
+}
+.centenarianPage-Block-achievementsBlock img{
+	margin-right: 33px;
 }
 /* SECTIONS */
 
@@ -358,7 +451,7 @@ h3.volunteers-list-block-name{
 /* FOOTER */
 
 .footer-logo{
-    background: url(../img/footer-logo.png);
+    background: url(/img/footer-logo.png);
     width: 226px;
     height: 67px;
 
@@ -434,4 +527,11 @@ li.social-url-g{
 }
 li.social-url-in{
 	background: url(../img/footer-icon-in.svg);
+}
+.clear:after{
+	visibility: hidden;
+	display: block;
+	content: "";
+	clear: both;
+	height: 0;
 }
