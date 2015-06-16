@@ -297,6 +297,10 @@ a.filter{
 	padding-top: 13px;
 	left: 659px;
 	top: 18px;
+	transition: all 0.3s ease;
+}
+.control-bar-button:hover{
+	box-shadow: 0px 2px 3px 0px rgba(168,168,168,0.50), 0px 5px 7px 0px rgba(118,118,118,0.50);
 }
 
 section.centenarians-gallery-list{
@@ -321,7 +325,12 @@ section.centenarians-gallery-list:after {
 	float: left;
 	margin-right: 19px;
 	margin-bottom: 18px;
-	box-shadow: 0 2px 4px rgba(210, 210, 210, 0.5);;
+	box-shadow: 0 2px 4px rgba(210, 210, 210, 0.5);
+	transition: all 0.3s ease;
+}
+.centenarian-block:hover{
+	/* Rectangle 9: */
+	box-shadow: 0px 2px 3px 0px rgba(168,168,168,0.50), 0px 5px 7px 0px rgba(118,118,118,0.50);
 }
 .centenarian-block:nth-child(4n){
 	margin-right: 0;
