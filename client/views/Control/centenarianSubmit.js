@@ -1,0 +1,18 @@
+Template.centenarianSubmit.events({
+	'submit form':function(e) {
+		e.preventDefault();
+
+		var centenarian = {
+			name: $(e.target).find('[name=name]').val(),
+			dateBirth: $(e.target).find('[name=dateBirth]').val(),
+			age: $(e.target).find('[name=age]').val(),
+			state: $(e.target).find('[name=state]').val(),
+			ethnicity: $(e.target).find('[name=ethnicity]').val(),
+			lifestyle: $(e.target).find('[name=lifestyle]').val(),
+			biography: $(e.target).find('[name=biography]').val()
+		};
+
+		centenarian._id = Centenarians.insert(centenarian);
+		Router.go('centenarianPage',centenarian);
+	}
+})
