@@ -12,7 +12,11 @@ Template.centenarianSubmit.events({
 			biography: $(e.target).find('[name=biography]').val()
 		};
 
-		centenarian._id = Centenarians.insert(centenarian);
-		Router.go('centenarianPage',centenarian);
+
+		Meteor.call('centenarianInsert', centenarian, function(error, result){
+			if(error)
+				return alert(error.reason);
+			Router.go('centenarianPage',{_id: result._id});
+		});
 	}
-})
+});
