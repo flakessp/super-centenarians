@@ -16,6 +16,11 @@ Template.centenarianSubmit.events({
 		Meteor.call('centenarianInsert', centenarian, function(error, result){
 			if(error)
 				return alert(error.reason);
+
+			if(result.centenarianExists)
+				alert('Centenarian with same name has already been posted');
+
+
 			Router.go('centenarianPage',{_id: result._id});
 		});
 	}
