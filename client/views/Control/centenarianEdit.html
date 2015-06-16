@@ -1,59 +1,97 @@
 <template name="centenarianEdit">
-  <form class="main">
-    <div class="control-group">
-      <label class="control-label" for="name">name</label>
-      <div class="controls">
-          <input name="name" id="name" type="text" value="{{name}}" placeholder="name" class="form-control"/>
-      </div>
-    </div>
-    <div class="control-group">
-      <label class="control-label" for="dateBirth">dateBirth</label>
-      <div class="controls">
-          <input name="dateBirth" id="dateBirth" type="text" value="{{dateBirth}}" placeholder="dateBirth" class="form-control"/> 
-      </div>
-    </div>
-    <div class="control-group">
-      <label class="control-label" for="age">age</label>
-      <div class="controls">
-          <input name="age" id="age" type="text" value="{{age}}" placeholder="age" class="form-control"/>
-      </div>
-    </div>
-    <div class="control-group">
-      <label class="control-label" for="state">state</label>
-      <div class="controls">
-          <input name="state" id="state" type="text" value="{{state}}" placeholder="state" class="form-control"/>
-      </div>
-    </div>
-    <div class="control-group">
-      <label class="control-label" for="ethnicity">ethnicity</label>
-      <div class="controls">
-          <input name="ethnicity" id="ethnicity" type="text" value="{{ethnicity}}" placeholder="ethnicity" class="form-control"/>
-      </div>
-    </div>
-    <div class="control-group">
-      <label class="control-label" for="lifestyle">lifestyle</label>
-      <div class="controls">
-          <input name="lifestyle" id="lifestyle" type="text" value="{{lifestyle}}" placeholder="lifestyle" class="form-control"/>
-      </div>
-    </div>
-    <div class="control-group">
-      <label class="control-label" for="biography">biography</label>
-      <div class="controls">
-          <input name="biography" id="biography" type="text" value="{{biography}}" placeholder="biography" class="form-control"/>
-      </div>
-    </div>
+  <section class="section-centenarianPage-mainBlock">
+    <article class="centenarianPage-textBlock centenarianForm-headerBlock">
+      <h2>Add centenarian</h2>
+    </article>
+  </section>
+  <section class="section-centenarianPage-mainBlock">
+    <article class="centenarianPage-textBlock">
 
-    <div class="control-group">
-        <div class="controls">
-            <input type="submit" value="Submit" class="btn btn-primary submit"/>
+      <form class="main">
+        <div class="control-group">
+          <label class="control-label" for="bioInfo"><h2>Info:</h2></label>
+          <div class="controls">
+              <input name="bioInfo" id="bioInfo" type="text" value="{{bioInfo}}" placeholder="Info" class="form-control"/>
+          </div>
         </div>
-    </div>
-    <hr/>
-    <div class="control-group">
-        <div class="controls">
-            <a class="btn btn-danger delete" href="#">Delete post</a>
+        <div class="control-group">
+          <label class="control-label" for="bioBiography"><h2>Biography:</h2></label>
+          <div class="controls">
+              <input name="bioBiography" id="bioBiography" type="text" value="{{bioBiography}}" placeholder="Biography" class="form-control"/>
+          </div>
         </div>
-    </div>
-    
-  </form>
+        <div class="control-group">
+          <label class="control-label" for="bioLifestyle"><h2>Health and lifestyle:</h2></label>
+          <div class="controls">
+              <input name="bioLifestyle" id="bioLifestyle" type="text" value="{{bioLifestyle}}" placeholder="Health and lifestyle" class="form-control"/>
+          </div>
+        </div>
+      </form>
+    </article>
+
+    <aside class="centenarianPage-infoBlock clear">
+      <div class="centenarianPage-infoBlock-profileBlock tileBlock">
+        <div class="profileBlock-photo">
+            <img src="/img/centenarian-photo.jpg" alt="" />
+          </div>
+        <form class="centenarianForm-rightBlock">
+          <div class="profileBlock-info">
+            <div class="control-group">
+          <label class="control-label" for="name">Name:</label>
+          <div class="controls">
+              <input name="name" id="name" type="text" value="{{name}}" placeholder="name" class="form-control"/>
+          </div>
+        </div>
+        <div class="control-group">
+          <label class="control-label" for="dateBirth">Date of Birth:</label>
+          <div class="controls">
+              <input name="dateBirth" id="dateBirth" type="text" value="{{dateBirth}}" placeholder="dateBirth" class="form-control"/> 
+          </div>
+        </div>
+        <div class="control-group">
+          <label class="control-label" for="age">Age:</label>
+          <div class="controls">
+              <input name="age" id="age" type="text" value="{{age}}" placeholder="age" class="form-control"/>
+          </div>
+        </div>
+        <div class="control-group">
+          <label class="control-label" for="state">Country:</label>
+          <div class="controls">
+              <input name="state" id="state" type="text" value="{{state}}" placeholder="state" class="form-control"/>
+          </div>
+        </div>
+        <div class="control-group">
+          <label class="control-label" for="ethnicity">Ethnicity:</label>
+          <div class="controls">
+              <input name="ethnicity" id="ethnicity" type="text" value="{{ethnicity}}" placeholder="ethnicity" class="form-control"/>
+          </div>
+        </div>
+        <div class="control-group">
+          <label class="control-label" for="lifestyle">Lifestyle:</label>
+          <div class="controls">
+              <input name="lifestyle" id="lifestyle" type="text" value="{{lifestyle}}" placeholder="lifestyle" class="form-control"/>
+          </div>
+        </div>
+          </div>
+          </form>
+        </div>
+    </aside>
+    <form class="centenarianForm-buttonBlock">
+
+        <div class="control-group">
+            <div class="controls">
+                <a class="delete" href="#">Delete post</a>
+            </div>
+        </div>
+
+        <div class="control-group">
+            <div class="controls">
+                <a href="#" class="add">Add</a>
+            </div>
+        </div>
+    </form><!-- /.centenarianForm-buttonBlock -->
+
+  </section>
+
+
 </template>
