@@ -1,5 +1,5 @@
 Template.centenarianEdit.events({
-	'click .add': function(e) {
+	'submit form': function(e) {
 		e.preventDefault();
 
 		var currentCentenarianId = this._id;
