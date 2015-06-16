@@ -1,5 +1,10 @@
 Centenarians = new Mongo.Collection('centenarians');
 
+Centenarians.allow({
+	update: ownsDocument,
+	remove: ownsDocument
+});
+
 Meteor.methods({
 	centenarianInsert: function(centenarianAttributes){
 		check(Meteor.userId(),String);
