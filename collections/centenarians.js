@@ -5,6 +5,12 @@ Centenarians.allow({
 	remove: ownsDocument
 });
 
+Centenarians.deny({
+	update: function(userId, centenarian, fieldNames){
+		return (_.without(fieldNames,'name','dateBirth','age','state','ethnicity','lifestyle','biography').length>0);
+	}
+});
+
 Meteor.methods({
 	centenarianInsert: function(centenarianAttributes){
 		check(Meteor.userId(),String);
